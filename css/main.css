@@ -1,0 +1,78 @@
+@font-face {
+   font-family: 'Nexa Bold Regular';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Nexa Bold Regular'), url('font/Nexa Bold.woff') format('woff');
+}
+
+*{
+   box-sizing:border-box;
+}
+
+body{
+   padding:0;
+   margin:0;
+   width:100%;
+   font-family: 'Nexa Bold Regular';
+}
+
+header{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   width:100%;
+   align-items:center;
+   background-color: #00ADEF;
+   padding:1em 2em;
+   color:white;
+   text-align:center;
+}
+
+header span{
+   font-size:2em;
+}
+
+nav{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   width:100%;
+   align-items:center;
+   background-color: #00ADEF;
+   padding:0;
+   color:white;
+   text-align:center;
+   padding-bottom: 1em;
+}
+
+nav a{
+   color:white;
+   text-transform:uppercase;
+   text-decoration:none;
+}
+
+nav a.active{
+   border-bottom:2px solid white;
+}
+
+#tasklist{
+   display:block;
+   width:100%;
+   padding:2em;
+   margin: 0em auto;
+}
+
+.items{
+   padding: 1em;
+   position:relative;
+   border:2px solid white;
+}
+
+
+.items span{
+   margin-left:1em;
+}
+
+.items.completed{
+/*    background-color:#f7f7f7; */
+   text-decoration:line-through;
+   color: #999;
+}
